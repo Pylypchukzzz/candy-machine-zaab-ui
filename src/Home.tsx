@@ -589,17 +589,17 @@ const Home = (props: HomeProps) => {
           <Image className="nft-image" src="yourimagehere.png" alt="Mint a YOURNFT" />
         </LeftContainer>
         <RightContainer className="rightcontainer">
-          <MainTitle className="maintitle">Your NFT Name</MainTitle>
+          <MainTitle className="maintitle">Fancy Zebra</MainTitle>
           <InfoContainer>
             <TotalItems className="totalitems">Total Items {itemsAvailable}</TotalItems>
             <Price className="price">Price ◎ {isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " ") : (price + " ")} </Price>
             <IconContainer>
               <IconLink className="infoIcon" href="#" target="__blank"> <InfoIcon src="website.svg" /> </IconLink>
-              <IconLink className="infoIcon" href="#" target="__blank"> <InfoIcon src="discord.svg" /> </IconLink>
-              <IconLink className="infoIcon" href="#" target="__blank"> <InfoIcon src="twitter.svg" /> </IconLink>
+              <IconLink className="infoIcon" href="https://discord.gg/VYfxVqeyqG" target="__blank"> <InfoIcon src="discord.svg" /> </IconLink>
+              <IconLink className="infoIcon" href="https://twitter.com/True_Fancy_Z" target="__blank"> <InfoIcon src="twitter.svg" /> </IconLink>
             </IconContainer>
           </InfoContainer>
-          <ProjectDescription>This front-end for Candy Machine V2 was made possible by Zaab Studio. Free to use & public to copy for everyone!</ProjectDescription>
+          <ProjectDescription>Fancy Z is a collection of 1111 generative zebras. Show your style, show yourself!</ProjectDescription>
           <MintButtonContainer>
             {!isActive && !isEnded && candyMachine ?.state.goLiveDate && (!isWLOnly || whitelistTokenBalance > 0) ? (
               <Countdown
